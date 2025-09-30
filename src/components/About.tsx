@@ -19,7 +19,7 @@ const About = () => {
               {/* Main Description */}
               <div className="bg-[#1F1F1F] backdrop-blur-sm rounded-2xl p-8 border border-[#2A2A2A]">
                 <p className="text-[#B0B0B0] text-lg leading-relaxed text-center mb-6">
-                  I'm a passionate{" "}
+                  I&apos;m a passionate{" "}
                   <span className="text-[#4F46E5]">Full Stack Developer</span>{" "}
                   specializing in modern web technologies. With expertise in
                   React.js, Node.js, and Next.js, I create seamless digital

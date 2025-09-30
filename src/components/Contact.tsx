@@ -43,20 +43,21 @@ const Contact = () => {
             Get In <span className="text-[#4F46E5]">Touch</span>
           </h2>
           <p className="text-[#B0B0B0] text-lg max-w-2xl mx-auto">
-            I'm always interested in new opportunities and exciting projects.
-            Let's discuss how we can work together!
+            I&apos;m always interested in new opportunities and exciting
+            projects. Let&apos;s discuss how we can work together!
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <h3 className="text-2xl font-semibold mb-6 text-[#4F46E5]">
-              Let's Connect
+              Let&apos;s Connect
             </h3>
             <p className="text-[#B0B0B0] mb-8 leading-relaxed">
-              I'm currently available for freelance work and full-time
+              I&apos;m currently available for freelance work and full-time
               opportunities. If you have a project that needs creative solutions
-              or just want to discuss technology, I'd love to hear from you.
+              or just want to discuss technology, I&apos;d love to hear from
+              you.
             </p>
 
             <div className="space-y-6">
@@ -277,8 +278,8 @@ const Contact = () => {
                         clipRule="evenodd"
                       />
                     </svg>
-                    Thank you for your message! I'll get back to you within 24
-                    hours.
+                    Thank you for your message! I&apos;ll get back to you within
+                    24 hours.
                   </div>
                 </div>
               )}

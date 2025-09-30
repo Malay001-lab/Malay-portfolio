@@ -50,7 +50,7 @@ const Header: React.FC<HeaderProps> = ({
 
     // Path to your resume file in the public folder
     // Make sure to put your resume.pdf file in the public folder
-    link.href = "/malay kothadiya.pdf";
+    link.href = "/Malay_Kothadiya_Resume.pdf";
 
     // This will force download with the specified filename
     link.download = "Malay_Kothadiya_Resume.pdf";

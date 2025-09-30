@@ -27,7 +27,7 @@ type ActiveComponent =
 export default function Home() {
   const [activeComponent, setActiveComponent] =
     useState<ActiveComponent>("home");
-  const [isScrolling, setIsScrolling] = useState(false);
+  const [, setIsScrolling] = useState(false);
   const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
@@ -43,7 +43,6 @@ export default function Home() {
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = sections[i] as HTMLElement;
         const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
 
         if (scrollY >= sectionTop) {
           currentSection = section.id as ActiveComponent;
