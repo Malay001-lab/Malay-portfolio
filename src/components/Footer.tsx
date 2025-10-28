@@ -1,12 +1,13 @@
+// components/Footer.tsx
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#1A1A1A] border-t border-[#4F46E5]/30 py-3">
+    <footer className="bg-gray-900 text-white py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <p className="text-[#B0B0B0] text-sm">
+            <p className="text-gray-300 text-sm">
               &copy; {currentYear} Malay Kothadiya. All rights reserved.
             </p>
           </div>
@@ -14,7 +15,7 @@ const Footer = () => {
             {/* Email */}
             <a
               href="mailto:malaykothadiya555@gmail.com"
-              className="text-[#B0B0B0] hover:text-[#4F46E5] transition-colors duration-300 p-2 hover:bg-[#1F1F1F] rounded-lg"
+              className="text-gray-300 hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-lg"
               title="Email"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -25,7 +26,7 @@ const Footer = () => {
             {/* Phone */}
             <a
               href="tel:+919924864810"
-              className="text-[#B0B0B0] hover:text-[#4F46E5] transition-colors duration-300 p-2 hover:bg-[#1F1F1F] rounded-lg"
+              className="text-gray-300 hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-lg"
               title="Phone"
             >
               <svg
@@ -48,7 +49,7 @@ const Footer = () => {
               href="https://github.com/Malay001-lab"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#B0B0B0] hover:text-[#4F46E5] transition-colors duration-300 p-2 hover:bg-[#1F1F1F] rounded-lg"
+              className="text-gray-300 hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-lg"
               title="GitHub"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -61,7 +62,7 @@ const Footer = () => {
               href="https://linkedin.com/in/malay-kothadiya-9664a233b"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#B0B0B0] hover:text-[#4F46E5] transition-colors duration-300 p-2 hover:bg-[#1F1F1F] rounded-lg"
+              className="text-gray-300 hover:text-white transition-colors duration-300 p-2 hover:bg-gray-800 rounded-lg"
               title="LinkedIn"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

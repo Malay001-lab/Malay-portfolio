@@ -1,3 +1,4 @@
+// tailwind.config.ts
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -7,7 +8,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        slate: {
+        gray: {
           850: "#1e293b",
         },
       },

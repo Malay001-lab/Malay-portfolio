@@ -1,47 +1,74 @@
+// components/Experience.tsx
+"use client";
+
 const Experience = () => {
   const experiences = [
     {
-      title: "Full-Stack Developer",
-      company: "Swiedge Pvt Ltd",
-      period: "Feb 2023 - Sept 2025",
-      duration: "2.5 years",
+      title: "Senior Frontend Developer",
+      company: "MicroSquare",
+      period: "Dec 2023 – Present",
+      duration: "Present",
       description: [
-        "Developed and maintained full-stack web applications using React.js, Next.js, Node.js, and TypeScript",
-        "Implemented responsive UI components and optimized frontend performance",
-        "Built RESTful APIs and integrated with MongoDB database",
-        "Collaborated with cross-functional teams to deliver high-quality software solutions",
-        "Mentored junior developers and conducted code reviews",
+        "Led a team of 4 frontend developers, driving successful delivery of high-quality web applications that improved user engagement by 20%",
+        "Spearheaded the transition to modern frontend frameworks, reducing development time by 30% and enhancing application performance",
+        "Mentored junior developers, fostering skill growth and increasing team productivity by 25%",
+        "Collaborated cross-functionally with design and backend teams to implement scalable solutions that supported business growth objectives",
+        "Architected and implemented scalable React.js and Next.js applications with TypeScript",
       ],
-      technologies: ["React", "Next.js", "Node.js", "MongoDB", "TypeScript"],
+      technologies: [
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "Redux",
+        "Tailwind CSS",
+        "MongoDB",
+      ],
       type: "Full-time",
+      achievements: [
+        "20% engagement boost",
+        "30% faster development",
+        "25% team productivity increase",
+      ],
     },
     {
-      title: "Full-Stack Developer",
-      company: "Freelance Projects",
-      period: "2023-2025",
-      duration: "2 years",
+      title: "Associate Frontend Developer",
+      company: "SwiftEdge Pvt Ltd",
+      period: "Feb 2023 – Nov 2023",
+      duration: "9 months",
       description: [
-        "Worked with multiple clients to design, develop, and deploy full-stack web applications",
-        "Built responsive, user-friendly frontends with reusable UI components",
-        "Developed secure and scalable backends with RESTful APIs",
-        "Optimized database queries and implemented authentication systems",
-        "Ensured cross-browser and cross-platform compatibility",
+        "Assisted in frontend development for client projects using React.js, TypeScript, and Tailwind CSS, contributing to a 25% increase in user engagement",
+        "Collaborated with backend teams to support REST API integration, helping to reduce project delivery timelines by 15%",
+        "Optimized frontend load times by 30%, improving accessibility and boosting user satisfaction scores by 20%",
+        "Participated in code reviews and shared best practices, aiding an 18% reduction in bugs and enhancing team quality standards",
+        "Developed dynamic, responsive UI components and integrated backend APIs for various client applications",
       ],
-      technologies: ["React", "Express", "PostgreSQL", "Firebase", "AWS"],
-      type: "Freelance",
+      technologies: [
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "MongoDB",
+        "Tailwind CSS",
+        "REST APIs",
+      ],
+      type: "Full-time",
+      achievements: [
+        "25% engagement increase",
+        "30% performance gain",
+        "18% bug reduction",
+      ],
     },
   ];
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-20">
+    <section className="min-h-screen flex items-center justify-center px-4 py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto w-full">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Professional <span className="text-[#4F46E5]">Journey</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+            Professional <span className="text-gray-700">Experience</span>
           </h2>
-          <p className="text-[#B0B0B0] text-lg max-w-2xl mx-auto">
-            A timeline of my professional growth and contributions across
-            various roles and projects
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            My journey through impactful roles, teamwork, and product innovation
+            that delivers measurable results
           </p>
         </div>
 
@@ -49,94 +76,75 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="group relative bg-[#1A1A1A] rounded-2xl overflow-hidden border border-[#2A2A2A] hover:border-[#4F46E5]/50 transition-all duration-500 h-full"
+              className="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-all duration-300 h-full shadow-sm hover:shadow-md"
             >
-              {/* Animated Background Gradient */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#4F46E5]/5 via-transparent to-[#F43F5E]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-              {/* Header Section */}
-              <div className="p-6 border-b border-[#2A2A2A] relative">
+              <div className="p-6 border-b border-gray-200">
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <span
-                      className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium mb-3 ${
-                        exp.type === "Full-time"
-                          ? "bg-[#4F46E5]/20 text-[#4F46E5] border border-[#4F46E5]/30"
-                          : exp.type === "Freelance"
-                          ? "bg-[#F43F5E]/20 text-[#F43F5E] border border-[#F43F5E]/30"
-                          : "bg-[#4F46E5]/20 text-[#4F46E5] border border-[#4F46E5]/30"
-                      }`}
-                    >
+                    <span className="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full border border-gray-300">
                       {exp.type}
                     </span>
-                    <h3 className="text-xl font-bold text-[#4F46E5] group-hover:text-[#4F46E5] transition-all duration-300">
+                    <h3 className="text-xl font-bold text-gray-900 mt-2">
                       {exp.title}
                     </h3>
-                    <h4 className="text-lg text-[#EAEAEA] mt-1 font-semibold">
-                      {exp.company}
-                    </h4>
+                    <h4 className="text-lg text-gray-700">{exp.company}</h4>
                   </div>
-                  <div className="text-right">
-                    <span className="text-[#4F46E5] text-sm font-medium bg-[#4F46E5]/10 px-3 py-1 rounded-full border border-[#4F46E5]/20">
-                      {exp.duration}
-                    </span>
-                  </div>
-                </div>
-
-                <div className="flex justify-between items-center text-sm text-[#B0B0B0]">
-                  <span className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-[#4F46E5] rounded-full"></div>
-                    {exp.period}
+                  <span className="text-gray-700 text-sm bg-gray-100 px-3 py-1 rounded-full border border-gray-300">
+                    {exp.duration}
                   </span>
                 </div>
+                <p className="text-xs text-gray-500">{exp.period}</p>
               </div>
 
-              {/* Description Section */}
               <div className="p-6">
                 <ul className="space-y-3 mb-6">
-                  {exp.description.map((item, i) => (
+                  {exp.description.map((line, i) => (
                     <li
                       key={i}
-                      className="flex items-start text-[#B0B0B0] group-hover:text-[#EAEAEA] transition-colors duration-300"
+                      className="text-sm text-gray-600 leading-relaxed"
                     >
-                      <span className="text-[#4F46E5] mr-3 mt-1.5 flex-shrink-0">
-                        ▶
-                      </span>
-                      <span className="text-sm leading-relaxed">{item}</span>
+                      • {line}
                     </li>
                   ))}
                 </ul>
 
-                {/* Technologies */}
-                <div className="pt-4 border-t border-[#2A2A2A]">
-                  <h5 className="text-[#B0B0B0] text-sm font-medium mb-3">
-                    Key Technologies:
+                {/* Achievements */}
+                <div className="mb-6">
+                  <h5 className="text-sm font-semibold text-gray-900 mb-2">
+                    Key Achievements:
                   </h5>
                   <div className="flex flex-wrap gap-2">
-                    {exp.technologies.map((tech, i) => (
+                    {exp.achievements.map((achievement, i) => (
                       <span
                         key={i}
-                        className="bg-[#1F1F1F] text-[#4F46E5] px-3 py-1.5 rounded-lg text-xs font-medium border border-[#2A2A2A] group-hover:border-[#4F46E5]/30 transition-colors duration-300"
+                        className="bg-gray-50 text-gray-700 text-xs px-3 py-1 rounded-lg border border-gray-200"
                       >
-                        {tech}
+                        {achievement}
                       </span>
                     ))}
                   </div>
                 </div>
-              </div>
 
-              {/* Hover Glow Effect */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#4F46E5]/0 via-[#4F46E5]/5 to-[#F43F5E]/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                <div className="flex flex-wrap gap-2">
+                  {exp.technologies.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="bg-gray-100 text-gray-700 text-xs px-3 py-1.5 rounded-lg border border-gray-200"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           ))}
         </div>
 
-        {/* Career Progress Indicator */}
         <div className="mt-12 text-center">
-          <div className="inline-flex items-center gap-2 bg-[#1A1A1A] px-6 py-3 rounded-2xl border border-[#2A2A2A]">
-            <div className="w-3 h-3 bg-[#4F46E5] rounded-full animate-pulse"></div>
-            <span className="text-[#B0B0B0] text-sm">
-              Continuing to grow and take on new challenges
+          <div className="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-2xl border border-gray-200 shadow-sm">
+            <div className="w-3 h-3 bg-gray-600 rounded-full animate-pulse"></div>
+            <span className="text-gray-600 text-sm">
+              Continuously learning and evolving through new challenges
             </span>
           </div>
         </div>

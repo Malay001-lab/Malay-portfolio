@@ -1,3 +1,4 @@
+// components/Header.tsx
 import { useState, useEffect } from "react";
 
 interface HeaderProps {
@@ -45,17 +46,9 @@ const Header: React.FC<HeaderProps> = ({
   };
 
   const handleDownloadResume = () => {
-    // Create a temporary anchor element
     const link = document.createElement("a");
-
-    // Path to your resume file in the public folder
-    // Make sure to put your resume.pdf file in the public folder
     link.href = "/Malay_Kothadiya_Resume.pdf";
-
-    // This will force download with the specified filename
     link.download = "Malay_Kothadiya_Resume.pdf";
-
-    // Append to the document, trigger click, and remove
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -65,19 +58,19 @@ const Header: React.FC<HeaderProps> = ({
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#121212]/95 backdrop-blur-md border-b border-[#4F46E5]/30"
+          ? "bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm"
           : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        {/* Left Side - Logo and Resume Button */}
+        {/* Logo */}
         <div className="flex items-center space-x-4">
-          <div className="text-xl font-bold text-[#4F46E5]">MK</div>
+          <div className="text-xl font-bold text-gray-900">MK</div>
 
           {/* Resume Download Button - Desktop */}
           <button
             onClick={handleDownloadResume}
-            className="cursor-pointer hidden md:flex items-center space-x-2 bg-transparent hover:bg-indigo-700/10 text-white px-4 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 text-sm font-medium"
+            className="hidden md:flex items-center space-x-2 bg-gray-900 hover:bg-gray-800 text-white px-4 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 text-sm font-medium"
           >
             <svg
               className="w-4 h-4"
@@ -102,10 +95,10 @@ const Header: React.FC<HeaderProps> = ({
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className={`transition-all duration-300 px-4 py-2 rounded-lg text-sm font-medium cursor-pointer ${
+              className={`transition-all duration-300 px-4 py-2 rounded-lg text-sm font-medium ${
                 activeComponent === item.id
-                  ? "text-[#4F46E5] bg-[#4F46E5]/10"
-                  : "text-[#EAEAEA] hover:text-[#4F46E5] hover:bg-[#4F46E5]/5"
+                  ? "text-gray-900 bg-gray-100"
+                  : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
               }`}
             >
               {item.label}
@@ -115,7 +108,7 @@ const Header: React.FC<HeaderProps> = ({
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-[#EAEAEA] p-2 hover:bg-[#4F46E5]/10 rounded-lg"
+          className="md:hidden text-gray-900 p-2 hover:bg-gray-100 rounded-lg"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <svg
@@ -145,12 +138,12 @@ const Header: React.FC<HeaderProps> = ({
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-[#121212]/95 backdrop-blur-md border-t border-[#4F46E5]/30 py-4">
+        <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-gray-200 py-4">
           <div className="container mx-auto px-4 flex flex-col space-y-2">
             {/* Resume Download Button - Mobile */}
             <button
               onClick={handleDownloadResume}
-              className="flex items-center justify-center space-x-2 bg-[#4F46E5] hover:bg-[#F43F5E] text-white px-4 py-3 rounded-lg transition-all duration-300 text-sm font-medium mb-2"
+              className="flex items-center justify-center space-x-2 bg-gray-900 hover:bg-gray-800 text-white px-4 py-3 rounded-lg transition-all duration-300 text-sm font-medium mb-2"
             >
               <svg
                 className="w-4 h-4"
@@ -174,8 +167,8 @@ const Header: React.FC<HeaderProps> = ({
                 onClick={() => scrollToSection(item.id)}
                 className={`text-left transition-all duration-300 px-4 py-3 rounded-lg text-sm font-medium ${
                   activeComponent === item.id
-                    ? "text-[#4F46E5] bg-[#4F46E5]/10"
-                    : "text-[#EAEAEA] hover:text-[#4F46E5] hover:bg-[#4F46E5]/5"
+                    ? "text-gray-900 bg-gray-100"
+                    : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
                 }`}
               >
                 {item.label}

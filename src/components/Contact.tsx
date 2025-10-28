@@ -1,3 +1,4 @@
+// components/Contact.tsx
 import { useState } from "react";
 
 const Contact = () => {
@@ -36,35 +37,35 @@ const Contact = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-20">
+    <section className="min-h-screen flex items-center justify-center px-4 py-20 bg-white">
       <div className="max-w-6xl mx-auto w-full">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Get In <span className="text-[#4F46E5]">Touch</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+            Get In <span className="text-gray-700">Touch</span>
           </h2>
-          <p className="text-[#B0B0B0] text-lg max-w-2xl mx-auto">
-            I&apos;m always interested in new opportunities and exciting
-            projects. Let&apos;s discuss how we can work together!
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            I'm always interested in new opportunities and exciting projects.
+            Let's discuss how we can work together to build something amazing!
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-semibold mb-6 text-[#4F46E5]">
-              Let&apos;s Connect
+            <h3 className="text-2xl font-semibold mb-6 text-gray-900">
+              Let's Connect
             </h3>
-            <p className="text-[#B0B0B0] mb-8 leading-relaxed">
-              I&apos;m currently available for freelance work and full-time
-              opportunities. If you have a project that needs creative solutions
-              or just want to discuss technology, I&apos;d love to hear from
-              you.
+            <p className="text-gray-600 mb-8 leading-relaxed">
+              I'm currently available for full-time opportunities and freelance
+              work. If you have a project that needs creative solutions, want to
+              discuss technology, or are looking for a dedicated developer to
+              join your team, I'd love to hear from you.
             </p>
 
             <div className="space-y-6">
               <div className="flex items-center space-x-4 group">
-                <div className="bg-[#1F1F1F] p-3 rounded-lg group-hover:bg-[#4F46E5]/20 group-hover:border group-hover:border-[#4F46E5]/30 transition-all duration-300">
+                <div className="bg-gray-100 p-3 rounded-lg group-hover:bg-gray-200 group-hover:border group-hover:border-gray-300 transition-all duration-300">
                   <svg
-                    className="w-6 h-6 text-[#4F46E5] group-hover:text-[#4F46E5] transition-colors duration-300"
+                    className="w-6 h-6 text-gray-700 group-hover:text-gray-900 transition-colors duration-300"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -78,17 +79,17 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-[#B0B0B0] text-sm">Phone</p>
-                  <p className="text-[#EAEAEA] text-lg font-medium">
-                    +91 9924864810
+                  <p className="text-gray-500 text-sm">Phone</p>
+                  <p className="text-gray-900 text-lg font-medium">
+                    +91 99248 64810
                   </p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-4 group">
-                <div className="bg-[#1F1F1F] p-3 rounded-lg group-hover:bg-[#4F46E5]/20 group-hover:border group-hover:border-[#4F46E5]/30 transition-all duration-300">
+                <div className="bg-gray-100 p-3 rounded-lg group-hover:bg-gray-200 group-hover:border group-hover:border-gray-300 transition-all duration-300">
                   <svg
-                    className="w-6 h-6 text-[#4F46E5] group-hover:text-[#4F46E5] transition-colors duration-300"
+                    className="w-6 h-6 text-gray-700 group-hover:text-gray-900 transition-colors duration-300"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -102,17 +103,17 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-[#B0B0B0] text-sm">Email</p>
-                  <p className="text-[#EAEAEA] text-lg font-medium">
+                  <p className="text-gray-500 text-sm">Email</p>
+                  <p className="text-gray-900 text-lg font-medium">
                     malaykothadiya555@gmail.com
                   </p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-4 group">
-                <div className="bg-[#1F1F1F] p-3 rounded-lg group-hover:bg-[#4F46E5]/20 group-hover:border group-hover:border-[#4F46E5]/30 transition-all duration-300">
+                <div className="bg-gray-100 p-3 rounded-lg group-hover:bg-gray-200 group-hover:border group-hover:border-gray-300 transition-all duration-300">
                   <svg
-                    className="w-6 h-6 text-[#4F46E5] group-hover:text-[#4F46E5] transition-colors duration-300"
+                    className="w-6 h-6 text-gray-700 group-hover:text-gray-900 transition-colors duration-300"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -132,8 +133,8 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-[#B0B0B0] text-sm">Location</p>
-                  <p className="text-[#EAEAEA] text-lg font-medium">
+                  <p className="text-gray-500 text-sm">Location</p>
+                  <p className="text-gray-900 text-lg font-medium">
                     Opera Royal, Kamrej, Surat
                   </p>
                 </div>
@@ -141,13 +142,14 @@ const Contact = () => {
             </div>
 
             {/* Additional Info */}
-            <div className="mt-8 p-6 bg-[#1A1A1A] rounded-2xl border border-[#2A2A2A]">
-              <h4 className="text-[#4F46E5] font-semibold mb-3">
+            <div className="mt-8 p-6 bg-gray-50 rounded-2xl border border-gray-200">
+              <h4 className="text-gray-900 font-semibold mb-3">
                 Response Time
               </h4>
-              <p className="text-[#B0B0B0] text-sm">
+              <p className="text-gray-600 text-sm">
                 I typically respond to all messages within 24 hours. For urgent
-                inquiries, feel free to call or text me directly.
+                inquiries, feel free to call or text me directly. I'm always
+                excited to discuss new opportunities!
               </p>
             </div>
           </div>
@@ -158,7 +160,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-[#B0B0B0] mb-2 text-sm font-medium"
+                    className="block text-gray-600 mb-2 text-sm font-medium"
                   >
                     Full Name *
                   </label>
@@ -169,7 +171,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full bg-[#1A1A1A] border border-[#2A2A2A] rounded-lg px-4 py-3 text-[#EAEAEA] focus:outline-none focus:ring-2 hover:border-[#4F46E5] focus:ring-[#4F46E5] focus:border-transparent transition-all duration-300 placeholder-[#666666]"
+                    className="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 hover:border-gray-400 focus:ring-gray-500 focus:border-transparent transition-all duration-300 placeholder-gray-400"
                     placeholder="Your full name"
                   />
                 </div>
@@ -177,7 +179,7 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-[#B0B0B0] mb-2 text-sm font-medium"
+                    className="block text-gray-600 mb-2 text-sm font-medium"
                   >
                     Email *
                   </label>
@@ -188,7 +190,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#4F46E5] rounded-lg px-4 py-3 text-[#EAEAEA] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent transition-all duration-300 placeholder-[#666666]"
+                    className="w-full bg-white border border-gray-300 hover:border-gray-400 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent transition-all duration-300 placeholder-gray-400"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -197,7 +199,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="subject"
-                  className="block text-[#B0B0B0] mb-2 text-sm font-medium"
+                  className="block text-gray-600 mb-2 text-sm font-medium"
                 >
                   Subject *
                 </label>
@@ -208,7 +210,7 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#4F46E5] rounded-lg px-4 py-3 text-[#EAEAEA] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent transition-all duration-300 placeholder-[#666666]"
+                  className="w-full bg-white border border-gray-300 hover:border-gray-400 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent transition-all duration-300 placeholder-gray-400"
                   placeholder="What's this regarding?"
                 />
               </div>
@@ -216,7 +218,7 @@ const Contact = () => {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-[#B0B0B0] mb-2 text-sm font-medium"
+                  className="block text-gray-600 mb-2 text-sm font-medium"
                 >
                   Message *
                 </label>
@@ -227,7 +229,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full bg-[#1A1A1A] border border-[#2A2A2A] hover:border-[#4F46E5] rounded-lg px-4 py-3 text-[#EAEAEA] focus:outline-none focus:ring-2 focus:ring-[#4F46E5] focus:border-transparent transition-all duration-300 resize-none placeholder-[#666666]"
+                  className="w-full bg-white border border-gray-300 hover:border-gray-400 rounded-lg px-4 py-3 text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent transition-all duration-300 resize-none placeholder-gray-400"
                   placeholder="Tell me about your project, questions, or how I can help you..."
                 ></textarea>
               </div>
@@ -235,7 +237,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="cursor-pointer w-full bg-[#4F46E5] hover:bg-[#4F46E5]/90 disabled:bg-[#2A2A2A] text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-[1.02] disabled:scale-100 shadow-lg hover:shadow-[#4F46E5]/25 disabled:shadow-none group"
+                className="w-full bg-gray-900 hover:bg-gray-800 disabled:bg-gray-300 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-[1.02] disabled:scale-100 shadow-lg hover:shadow-gray-400/25 disabled:shadow-none group"
               >
                 <span className="flex items-center justify-center gap-2">
                   {isSubmitting ? (
@@ -247,7 +249,7 @@ const Contact = () => {
                     <>
                       Send Message
                       <svg
-                        className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300 rotate-90"
+                        className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -265,7 +267,7 @@ const Contact = () => {
               </button>
 
               {submitStatus === "success" && (
-                <div className="bg-[#4F46E5]/20 border border-[#4F46E5]/30 text-[#4F46E5] px-4 py-3 rounded-lg text-center">
+                <div className="bg-green-50 border border-green-200 text-green-700 px-4 py-3 rounded-lg text-center">
                   <div className="flex items-center justify-center gap-2">
                     <svg
                       className="w-5 h-5"
@@ -278,8 +280,8 @@ const Contact = () => {
                         clipRule="evenodd"
                       />
                     </svg>
-                    Thank you for your message! I&apos;ll get back to you within
-                    24 hours.
+                    Thank you for your message! I'll get back to you within 24
+                    hours.
                   </div>
                 </div>
               )}

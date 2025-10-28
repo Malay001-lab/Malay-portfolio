@@ -1,3 +1,4 @@
+// components/Hero.tsx
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -12,61 +13,99 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 pt-20 pb-16">
+    <section className="min-h-screen flex items-center justify-center px-4 pt-20 pb-16 bg-gradient-to-br from-white to-gray-50">
       <div className="max-w-6xl mx-auto text-center">
         <div className="animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Malay <span className="text-[#4F46E5]">Kothadiya</span>
+          {/* Profile Image */}
+          <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-br from-gray-200 to-gray-300 p-1 shadow-lg">
+            <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+              <span className="text-2xl font-bold text-gray-700">MK</span>
+            </div>
+          </div>
+
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-900">
+            Malay <span className="text-gray-700">Kothadiya</span>
           </h1>
-          <h2 className="text-2xl md:text-3xl text-[#EAEAEA] mb-8">
-            Full-Stack Developer
+          <h2 className="text-2xl md:text-3xl text-gray-700 mb-8 font-medium">
+            Senior Frontend Developer
           </h2>
-          <p className="text-lg text-[#B0B0B0] mb-10 max-w-2xl mx-auto leading-relaxed">
-            I build exceptional digital experiences with modern technologies
-            like React.js, Node.js, Next.js, and TypeScript. Focused on creating
-            scalable, user-friendly applications that solve real-world problems.
+          <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+            Results-driven Senior Frontend Developer with 2.5+ years of
+            expertise in
+            <span className="font-semibold text-gray-900">
+              {" "}
+              React.js, Next.js, and TypeScript
+            </span>
+            . Proven track record of delivering scalable web applications that
+            increase client engagement by 30% and reduce page load times by 25%.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button
               onClick={() => scrollToSection("projects")}
-              className="bg-[#4F46E5]  text-white px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg font-medium cursor-pointer"
+              className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg font-medium"
             >
               View My Work
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="cursor-pointer border border-[#4F46E5] text-[#4F46E5] hover:bg-[#4F46E5]/10 px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 font-medium"
+              className="border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 font-medium"
             >
               Get In Touch
             </button>
           </div>
 
-          {/* Stats */}
+          {/* Enhanced Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-2xl mx-auto">
-            <div className="text-center p-4 bg-[#1A1A1A] rounded-xl border border-[#2A2A2A]">
-              <div className="text-2xl md:text-3xl font-bold text-[#4F46E5]">
-                2+
+            <div className="text-center p-6 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">
+                2.5+
               </div>
-              <div className="text-[#B0B0B0] text-sm">Years Experience</div>
+              <div className="text-gray-600 text-sm">Years Experience</div>
             </div>
-            <div className="text-center p-4 bg-[#1A1A1A] rounded-xl border border-[#2A2A2A]">
-              <div className="text-2xl md:text-3xl font-bold text-[#4F46E5]">
-                15+
-              </div>
-              <div className="text-[#B0B0B0] text-sm">Projects Completed</div>
-            </div>
-            <div className="text-center p-4 bg-[#1A1A1A] rounded-xl border border-[#2A2A2A]">
-              <div className="text-2xl md:text-3xl font-bold text-[#4F46E5]">
+            <div className="text-center p-6 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">
                 10+
               </div>
-              <div className="text-[#B0B0B0] text-sm">Happy Clients</div>
+              <div className="text-gray-600 text-sm">Projects Completed</div>
             </div>
-            <div className="text-center p-4 bg-[#1A1A1A] rounded-xl border border-[#2A2A2A]">
-              <div className="text-2xl md:text-3xl font-bold text-[#4F46E5]">
-                5+
+            <div className="text-center p-6 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">
+                30%
               </div>
-              <div className="text-[#B0B0B0] text-sm">Technologies</div>
+              <div className="text-gray-600 text-sm">Engagement Boost</div>
             </div>
+            <div className="text-center p-6 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+              <div className="text-2xl md:text-3xl font-bold text-gray-900">
+                25%
+              </div>
+              <div className="text-gray-600 text-sm">Performance Gain</div>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div className="flex justify-center space-x-6 mt-12">
+            <a
+              href="https://github.com/Malay001-lab"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://linkedin.com/in/malay-kothadiya-9664a233b"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="mailto:malaykothadiya555@gmail.com"
+              className="text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              Email
+            </a>
           </div>
         </div>
       </div>

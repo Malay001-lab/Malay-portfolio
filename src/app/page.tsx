@@ -1,3 +1,4 @@
+// pages/index.tsx (Main App)
 "use client";
 import Head from "next/head";
 import { useState, useEffect, useRef } from "react";
@@ -35,11 +36,10 @@ export default function Home() {
 
     const updateActiveSection = () => {
       const sections = document.querySelectorAll("section[id]");
-      const scrollY = window.pageYOffset + 100; // Offset for better visibility
+      const scrollY = window.pageYOffset + 100;
 
       let currentSection: ActiveComponent = "home";
 
-      // Find the section that's currently in view
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = sections[i] as HTMLElement;
         const sectionTop = section.offsetTop;
@@ -57,24 +57,20 @@ export default function Home() {
     const handleScroll = () => {
       setIsScrolling(true);
 
-      // Clear existing timeout
       if (scrollTimeoutRef.current) {
         clearTimeout(scrollTimeoutRef.current);
       }
 
-      // Throttle scroll events for performance
       if (!ticking) {
         requestAnimationFrame(updateActiveSection);
         ticking = true;
       }
 
-      // Set timeout to clear scrolling state
       scrollTimeoutRef.current = setTimeout(() => {
         setIsScrolling(false);
       }, 100);
     };
 
-    // Initial check on mount
     updateActiveSection();
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -88,12 +84,16 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#121212] text-[#EAEAEA]">
+    <div className="min-h-screen bg-white text-gray-900">
       <Head>
-        <title>Malay Kothadiya | Full-Stack Developer</title>
+        <title>Malay Kothadiya | Senior Frontend Developer</title>
         <meta
           name="description"
-          content="Full-Stack Developer specializing in React.js, Node.js, and Next.js"
+          content="Senior Frontend Developer specializing in React.js, Next.js, and TypeScript. 2.5+ years of experience building scalable web applications."
+        />
+        <meta
+          name="keywords"
+          content="Frontend Developer, React.js, Next.js, TypeScript, JavaScript, Web Development"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
