@@ -1,7 +1,10 @@
 // components/About.tsx
 const About = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-20 bg-white">
+    <section
+      id="about"
+      className="min-h-screen flex items-center justify-center px-4 py-20 bg-white"
+    >
       <div className="max-w-6xl mx-auto">
         <div className="relative bg-white rounded-3xl border border-gray-200 overflow-hidden shadow-sm">
           <div className="relative z-10 p-8 md:p-12">
@@ -16,21 +19,22 @@ const About = () => {
                 <p className="text-gray-700 text-lg leading-relaxed text-center mb-6">
                   I'm a passionate{" "}
                   <span className="font-semibold text-gray-900">
-                    Senior Frontend Developer
+                    Senior Frontend Developer & Team Lead
                   </span>{" "}
-                  specializing in modern web technologies. With expertise in{" "}
+                  with 2.5+ years of expertise in modern web technologies.
+                  Specializing in{" "}
                   <span className="font-semibold">
                     React.js, Next.js, TypeScript, and Node.js
                   </span>
-                  , I create seamless digital experiences that blend beautiful
-                  design with robust functionality.
+                  , I create scalable web applications that increase client
+                  engagement by 30% and reduce page load times by 25%.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed text-center">
                   I thrive on transforming complex problems into elegant
-                  solutions, writing clean, scalable code that stands the test
-                  of time. Always learning and adapting to deliver exceptional
-                  results that drive business growth and enhance user
-                  experiences.
+                  solutions, leading teams of developers, and delivering
+                  exceptional results that drive business growth. My focus is on
+                  building high-performance applications with user-centric
+                  interfaces and seamless digital experiences.
                 </p>
               </div>
 
@@ -38,21 +42,23 @@ const About = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="text-center p-6 bg-white rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-300 shadow-sm">
                   <div className="text-2xl mb-3">⚡</div>
-                  <h4 className="text-gray-900 font-semibold mb-2">Frontend</h4>
+                  <h4 className="text-gray-900 font-semibold mb-2">
+                    Frontend Expertise
+                  </h4>
                   <p className="text-gray-600 text-sm">
                     React.js, Next.js, TypeScript, JavaScript, Tailwind CSS,
-                    HTML5, CSS3, Redux, Chart.js
+                    HTML5, CSS3, Redux, Chart.js, Context API
                   </p>
                 </div>
 
                 <div className="text-center p-6 bg-white rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-300 shadow-sm">
                   <div className="text-2xl mb-3">🚀</div>
                   <h4 className="text-gray-900 font-semibold mb-2">
-                    Expertise
+                    Leadership & Methodology
                   </h4>
                   <p className="text-gray-600 text-sm">
-                    Performance Optimization, Team Leadership, Agile
-                    Methodology, CI/CD, Testing, Real-time Applications
+                    Team Leadership, Agile/Scrum, Performance Optimization,
+                    CI/CD, Testing, Mentoring, Project Management
                   </p>
                 </div>
               </div>

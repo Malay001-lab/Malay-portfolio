@@ -27,7 +27,7 @@ const Hero = () => {
             Malay <span className="text-gray-700">Kothadiya</span>
           </h1>
           <h2 className="text-2xl md:text-3xl text-gray-700 mb-8 font-medium">
-            Senior Frontend Developer
+            Senior Frontend Developer & Team Lead
           </h2>
           <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
             Results-driven Senior Frontend Developer with 2.5+ years of
@@ -36,8 +36,9 @@ const Hero = () => {
               {" "}
               React.js, Next.js, and TypeScript
             </span>
-            . Proven track record of delivering scalable web applications that
-            increase client engagement by 30% and reduce page load times by 25%.
+            . Proven track record of leading developer teams and delivering
+            scalable applications that increase engagement by 30% and optimize
+            performance by 25%.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <button
@@ -47,10 +48,10 @@ const Hero = () => {
               View My Work
             </button>
             <button
-              onClick={() => scrollToSection("contact")}
+              onClick={() => scrollToSection("experience")}
               className="border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 font-medium"
             >
-              Get In Touch
+              My Experience
             </button>
           </div>
 
@@ -76,9 +77,9 @@ const Hero = () => {
             </div>
             <div className="text-center p-6 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
               <div className="text-2xl md:text-3xl font-bold text-gray-900">
-                25%
+                4+
               </div>
-              <div className="text-gray-600 text-sm">Performance Gain</div>
+              <div className="text-gray-600 text-sm">Team Members Led</div>
             </div>
           </div>
 

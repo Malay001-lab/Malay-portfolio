@@ -14,29 +14,32 @@ const Skills = () => {
       ],
     },
     {
-      title: "Tools & Workflow",
+      title: "Backend & Database",
       skills: [
-        { name: "Git / GitHub", level: 90 },
-        { name: "Docker / CI/CD", level: 78 },
-        { name: "Postman / API Testing", level: 88 },
-        { name: "VS Code / Figma", level: 92 },
-        { name: "Agile / Jira", level: 85 },
+        { name: "Node.js / Express.js", level: 82 },
+        { name: "RESTful APIs / GraphQL", level: 85 },
+        { name: "MongoDB / MySQL", level: 78 },
+        { name: "JWT Authentication", level: 87 },
+        { name: "WebSocket / Real-time", level: 80 },
       ],
     },
     {
-      title: "Testing & Optimization",
+      title: "Tools & Methodology",
       skills: [
+        { name: "Git / GitHub", level: 90 },
+        { name: "Docker / CI/CD", level: 78 },
+        { name: "Agile / Scrum / Jira", level: 85 },
         { name: "Jest / React Testing", level: 83 },
         { name: "Performance Optimization", level: 89 },
-        { name: "Code Splitting", level: 86 },
-        { name: "SEO Optimization", level: 81 },
-        { name: "Webpack / Bundling", level: 79 },
       ],
     },
   ];
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-20 bg-white">
+    <section
+      id="skills"
+      className="min-h-screen flex items-center justify-center px-4 py-20 bg-white"
+    >
       <div className="max-w-6xl mx-auto w-full">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-gray-900">
           Technical <span className="text-gray-700">Skills</span>
@@ -76,11 +79,11 @@ const Skills = () => {
         {/* Additional Skills Section */}
         <div className="mt-12 bg-gray-50 rounded-2xl p-8 border border-gray-200">
           <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-            Additional Expertise
+            Leadership & Additional Expertise
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             <div className="p-4">
-              <div className="text-2xl mb-2">🚀</div>
+              <div className="text-2xl mb-2">👥</div>
               <h4 className="font-semibold text-gray-900 mb-1">
                 Team Leadership
               </h4>

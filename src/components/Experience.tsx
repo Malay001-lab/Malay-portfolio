@@ -4,16 +4,16 @@
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Frontend Developer",
+      title: "Senior Frontend Developer & Team Lead",
       company: "MicroSquare",
       period: "Dec 2023 – Present",
       duration: "Present",
       description: [
-        "Led a team of 4 frontend developers, driving successful delivery of high-quality web applications that improved user engagement by 20%",
+        "Lead a team of 4 frontend developers, driving successful delivery of high-quality web applications that improved user engagement by 20%",
         "Spearheaded the transition to modern frontend frameworks, reducing development time by 30% and enhancing application performance",
         "Mentored junior developers, fostering skill growth and increasing team productivity by 25%",
         "Collaborated cross-functionally with design and backend teams to implement scalable solutions that supported business growth objectives",
-        "Architected and implemented scalable React.js and Next.js applications with TypeScript",
+        "Architected and implemented scalable React.js and Next.js applications with TypeScript and modern state management",
       ],
       technologies: [
         "React.js",
@@ -22,12 +22,15 @@ const Experience = () => {
         "Redux",
         "Tailwind CSS",
         "MongoDB",
+        "Team Leadership",
+        "Agile Methodology",
       ],
       type: "Full-time",
       achievements: [
         "20% engagement boost",
         "30% faster development",
-        "25% team productivity increase",
+        "25% team productivity",
+        "4 developers led",
       ],
     },
     {
@@ -49,26 +52,32 @@ const Experience = () => {
         "MongoDB",
         "Tailwind CSS",
         "REST APIs",
+        "JavaScript",
+        "Responsive Design",
       ],
       type: "Full-time",
       achievements: [
         "25% engagement increase",
         "30% performance gain",
         "18% bug reduction",
+        "15% faster delivery",
       ],
     },
   ];
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-20 bg-gray-50">
+    <section
+      id="experience"
+      className="min-h-screen flex items-center justify-center px-4 py-20 bg-gray-50"
+    >
       <div className="max-w-6xl mx-auto w-full">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
             Professional <span className="text-gray-700">Experience</span>
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            My journey through impactful roles, teamwork, and product innovation
-            that delivers measurable results
+            My journey through impactful roles, team leadership, and product
+            innovation that delivers measurable business results
           </p>
         </div>
 
@@ -144,7 +153,8 @@ const Experience = () => {
           <div className="inline-flex items-center gap-2 bg-white px-6 py-3 rounded-2xl border border-gray-200 shadow-sm">
             <div className="w-3 h-3 bg-gray-600 rounded-full animate-pulse"></div>
             <span className="text-gray-600 text-sm">
-              Continuously learning and evolving through new challenges
+              Continuously evolving through leadership challenges and technical
+              innovation
             </span>
           </div>
         </div>

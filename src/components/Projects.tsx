@@ -7,139 +7,133 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Enterprise E-Commerce Platform",
+      title: "E-Commerce Platform",
       description:
-        "Led frontend development for a scalable e-commerce platform with secure JWT authentication, dynamic admin panel, and real-time order tracking. Implemented performance optimizations that increased user engagement by 30% and reduced order processing time by 25%.",
+        "Led the complete frontend architecture and development of a scalable, enterprise-level e-commerce platform with secure authentication, real-time interactivity, and optimized performance through modular, reusable components and modern UI design.",
       technologies: [
-        "React.js",
+        "Next.js",
         "TypeScript",
         "Tailwind CSS",
-        "JWT",
-        "WebSocket",
-        "REST APIs",
+        "Redux",
         "Jest",
         "React Testing Library",
+        "JWT Authentication",
+        "WebSocket",
       ],
       category: "Company Project",
       status: "Completed",
       achievements: [
-        "30% increase in user engagement",
-        "25% faster order processing",
-        "40% reduction in bugs",
+        "Scalable enterprise-level architecture",
+        "Secure authentication system",
+        "Real-time interactivity",
+        "Optimized performance",
       ],
       features: [
+        "Modular reusable components",
+        "Modern UI design",
         "Secure authentication",
-        "Real-time tracking",
-        "Admin dashboard",
-        "Performance optimized",
+        "Real-time features",
       ],
+      tools: ["Agile", "Jira"],
     },
     {
-      title: "Real Estate Analytics Dashboard",
+      title: "Real-Estate Property Management System",
       description:
-        "Architected a server-side rendered dashboard using Next.js for real-time property analytics serving 5,000+ users. Integrated WebSocket for live data streaming and Chart.js for dynamic visualizations, boosting rendering performance by 25%.",
+        "Directed the frontend development of a dynamic, server-side rendered Real Estate Analytics Dashboard built with Next.js, enabling real-time property performance tracking and market insights. Focused on creating a scalable, SEO-friendly, and high-performing interface through efficient state management, modular architecture, and seamless team collaboration.",
       technologies: [
         "Next.js",
-        "React.js",
+        "TypeScript",
         "Redux",
-        "Chart.js",
         "WebSocket",
-        "REST APIs",
+        "Chart.js",
+        "Tailwind CSS",
       ],
       category: "Company Project",
       status: "Completed",
       achievements: [
-        "40% increase in user engagement",
-        "25% performance improvement",
-        "5,000+ active users",
+        "Real-time property performance tracking",
+        "Market insights dashboard",
+        "SEO-friendly interface",
+        "High-performing application",
       ],
       features: [
-        "Real-time analytics",
-        "Data visualization",
-        "SSR implementation",
-        "Scalable architecture",
-      ],
-    },
-    {
-      title: "Import-Export Management System",
-      description:
-        "Developed end-to-end import/export tracking modules with real-time data integration from multiple shipping APIs. Enhanced application performance through advanced responsive design and code-splitting, resulting in 25% user adoption increase.",
-      technologies: [
-        "React.js",
-        "TypeScript",
-        "Redux",
-        "REST APIs",
-        "Docker",
-        "Jest",
-        "Webpack",
-      ],
-      category: "Client Project",
-      status: "Completed",
-      achievements: [
-        "25% increase in user adoption",
-        "15% reduction in data discrepancies",
-        "99.9% system uptime",
-      ],
-      features: [
-        "Multi-API integration",
-        "Real-time tracking",
-        "Data validation",
-        "CI/CD pipeline",
-      ],
-    },
-    {
-      title: "Hotel Booking Platform",
-      description:
-        "Led frontend development of a full-stack hotel reservation system focusing on server-side rendering and dynamic UI. Implemented real-time room availability updates with WebSocket integration, improving initial page load speed by 25%.",
-      technologies: [
-        "Next.js",
-        "React.js",
-        "WebSocket",
-        "JWT",
-        "SSR",
-        "Responsive Design",
-      ],
-      category: "Client Project",
-      status: "Completed",
-      achievements: [
-        "25% faster page loads",
-        "Real-time availability",
-        "1,000+ monthly users",
-        "30% faster transactions",
-      ],
-      features: [
-        "Real-time booking",
-        "SSR optimization",
-        "Secure payments",
-        "Mobile responsive",
-      ],
-    },
-    {
-      title: "CRM Dashboard",
-      description:
-        "Built a comprehensive CRM dashboard for lead management and real-time analytics visualization. Engineered dynamic UI elements with Chart.js and integrated RESTful APIs, enhancing sales team efficiency by 30% through actionable insights.",
-      technologies: [
-        "React.js",
-        "TypeScript",
-        "Chart.js",
-        "Redux",
-        "REST APIs",
-        "JWT",
-        "CSS Modules",
-      ],
-      category: "Client Project",
-      status: "Completed",
-      achievements: [
-        "30% sales efficiency boost",
-        "Real-time analytics",
-        "Scalable components",
-        "Automated workflows",
-      ],
-      features: [
-        "Lead tracking",
-        "Analytics dashboard",
-        "Workflow automation",
+        "Server-side rendering",
+        "Efficient state management",
+        "Modular architecture",
         "Team collaboration",
+      ],
+    },
+    {
+      title: "Stock-Management System",
+      description:
+        "Developed a robust Stock Management System focused on real-time inventory control, seamless order tracking, and data accuracy. Implemented efficient UI components, dynamic dashboards, and role-based access to enhance stock visibility and streamline warehouse operations.",
+      technologies: [
+        "React.js",
+        "JavaScript",
+        "Context API",
+        "D3.js",
+        "Axios",
+        "React Testing Library",
+      ],
+      category: "Client Project",
+      status: "Completed",
+      achievements: [
+        "Real-time inventory control",
+        "Seamless order tracking",
+        "Enhanced data accuracy",
+        "Streamlined warehouse operations",
+      ],
+      features: [
+        "Efficient UI components",
+        "Dynamic dashboards",
+        "Role-based access control",
+        "Stock visibility enhancement",
+      ],
+    },
+    {
+      title: "Hotel-Booking Platform",
+      description:
+        "Developed the frontend of a Hotel Reservation System focused on real-time room availability, booking management, and smooth user interaction. Implemented dynamic search filters, interactive booking calendars, and responsive dashboards to enhance the overall user experience and streamline hotel operations.",
+      technologies: ["Next.js", "JavaScript", "Redux", "Axios"],
+      category: "Client Project",
+      status: "Completed",
+      achievements: [
+        "Real-time room availability",
+        "Smooth booking management",
+        "Enhanced user experience",
+        "Streamlined hotel operations",
+      ],
+      features: [
+        "Dynamic search filters",
+        "Interactive booking calendars",
+        "Responsive dashboards",
+        "User-friendly interface",
+      ],
+    },
+    {
+      title: "Finance Management System",
+      description:
+        "Built a Finance Management System to track income, expenses, and budgets with real-time analytics, EMI and interest calculations, and interactive dashboards, providing a secure and intuitive platform for effective financial management.",
+      technologies: [
+        "React.js",
+        "TypeScript",
+        "Context API",
+        "Fetch API",
+        "Chart.js",
+      ],
+      category: "Client Project",
+      status: "Completed",
+      achievements: [
+        "Real-time financial analytics",
+        "EMI and interest calculations",
+        "Interactive dashboards",
+        "Secure financial platform",
+      ],
+      features: [
+        "Income/expense tracking",
+        "Budget management",
+        "Interactive visualizations",
+        "Secure platform",
       ],
     },
   ];
@@ -147,19 +141,22 @@ const Projects = () => {
   const closeModal = () => setSelectedProject(null);
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-20 bg-gray-50">
+    <section
+      id="projects"
+      className="min-h-screen flex items-center justify-center px-4 py-20 bg-gray-50"
+    >
       <div className="max-w-6xl mx-auto w-full">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
             Project <span className="text-gray-700">Portfolio</span>
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            A showcase of impactful projects demonstrating full-stack expertise
-            and measurable business results
+            A showcase of projects demonstrating full-stack expertise and
+            technical capabilities
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -265,7 +262,7 @@ const Projects = () => {
                 </div>
               </div>
 
-              <div>
+              <div className="mb-6">
                 <h4 className="font-semibold text-gray-900 mb-3">
                   Technologies Used
                 </h4>
@@ -280,6 +277,24 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
+
+              {projects[selectedProject].tools && (
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-3">
+                    Tools & Methodologies
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {projects[selectedProject].tools.map((tool, i) => (
+                      <span
+                        key={i}
+                        className="bg-blue-100 text-blue-700 text-xs px-3 py-1.5 rounded-lg border border-blue-200"
+                      >
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         )}
