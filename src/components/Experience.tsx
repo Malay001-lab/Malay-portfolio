@@ -5,7 +5,7 @@ const Experience = () => {
   const experiences = [
     {
       title: "Senior Frontend Developer & Team Lead",
-      company: "MicroSquare",
+      company: "MicraSquare",
       period: "Dec 2023 – Present",
       duration: "Present",
       description: [
