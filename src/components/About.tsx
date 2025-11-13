@@ -21,7 +21,7 @@ const About = () => {
                   <span className="font-semibold text-gray-900">
                     Senior Frontend Developer & Team Lead
                   </span>{" "}
-                  with 2.5+ years of expertise in modern web technologies.
+                  with 3.5+ years of expertise in modern web technologies.
                   Specializing in{" "}
                   <span className="font-semibold">
                     React.js, Next.js, TypeScript, and Node.js

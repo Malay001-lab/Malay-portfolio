@@ -1,4 +1,3 @@
-// pages/index.tsx (Main App)
 "use client";
 import Head from "next/head";
 import { useState, useEffect, useRef } from "react";
@@ -10,6 +9,7 @@ import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Education from "@/components/Education";
 
 declare global {
   interface Window {
@@ -23,6 +23,7 @@ type ActiveComponent =
   | "experience"
   | "skills"
   | "projects"
+  | "education"
   | "contact";
 
 export default function Home() {
@@ -120,6 +121,9 @@ export default function Home() {
 
         <section id="skills">
           <Skills />
+        </section>
+        <section id="education">
+          <Education />
         </section>
 
         <section id="projects">

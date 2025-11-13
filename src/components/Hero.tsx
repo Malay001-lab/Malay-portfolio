@@ -1,4 +1,3 @@
-// components/Hero.tsx
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -30,7 +29,7 @@ const Hero = () => {
             Senior Frontend Developer & Team Lead
           </h2>
           <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Results-driven Senior Frontend Developer with 2.5+ years of
+            Results-driven Senior Frontend Developer with 3.5+ years of
             expertise in
             <span className="font-semibold text-gray-900">
               {" "}
@@ -59,7 +58,7 @@ const Hero = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-2xl mx-auto">
             <div className="text-center p-6 bg-white rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
               <div className="text-2xl md:text-3xl font-bold text-gray-900">
-                2.5+
+                3.5+
               </div>
               <div className="text-gray-600 text-sm">Years Experience</div>
             </div>

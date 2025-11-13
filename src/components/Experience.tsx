@@ -1,4 +1,3 @@
-// components/Experience.tsx
 "use client";
 
 const Experience = () => {
@@ -6,8 +5,8 @@ const Experience = () => {
     {
       title: "Senior Frontend Developer & Team Lead",
       company: "MicraSquare",
-      period: "Dec 2023 – Present",
-      duration: "Present",
+      period: "March 2023 – Present",
+      duration: "2.8 years",
       description: [
         "Lead a team of 4 frontend developers, driving successful delivery of high-quality web applications that improved user engagement by 20%",
         "Spearheaded the transition to modern frontend frameworks, reducing development time by 30% and enhancing application performance",
@@ -36,8 +35,8 @@ const Experience = () => {
     {
       title: "Associate Frontend Developer",
       company: "SwiftEdge Pvt Ltd",
-      period: "Feb 2023 – Nov 2023",
-      duration: "9 months",
+      period: "May 2022 – Feb 2023",
+      duration: "10 months",
       description: [
         "Assisted in frontend development for client projects using React.js, TypeScript, and Tailwind CSS, contributing to a 25% increase in user engagement",
         "Collaborated with backend teams to support REST API integration, helping to reduce project delivery timelines by 15%",

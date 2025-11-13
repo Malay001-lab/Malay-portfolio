@@ -1,4 +1,3 @@
-// components/Header.tsx
 import { useState, useEffect } from "react";
 
 interface HeaderProps {
@@ -18,6 +17,7 @@ const Header: React.FC<HeaderProps> = ({
     { id: "about", label: "About" },
     { id: "experience", label: "Experience" },
     { id: "skills", label: "Skills" },
+    { id: "education", label: "Education" },
     { id: "projects", label: "Projects" },
     { id: "contact", label: "Contact" },
   ];
@@ -47,7 +47,7 @@ const Header: React.FC<HeaderProps> = ({
 
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/Malay.pdf";
+    link.href = "/Malay-Kothadiya.pdf";
     link.download = "Malay.PDf";
     document.body.appendChild(link);
     link.click();
