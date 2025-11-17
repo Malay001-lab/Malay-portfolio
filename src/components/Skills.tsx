@@ -1,4 +1,3 @@
-// components/Skills.tsx
 "use client";
 
 const Skills = () => {
