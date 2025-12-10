@@ -47,7 +47,7 @@ const Header: React.FC<HeaderProps> = ({
 
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/Malay-Kothadiya.pdf";
+    link.href = "/MALAY_KOTHADIYA.pdf";
     link.download = "Malay.PDf";
     document.body.appendChild(link);
     link.click();
@@ -56,11 +56,10 @@ const Header: React.FC<HeaderProps> = ({
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
           ? "bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
@@ -95,11 +94,10 @@ const Header: React.FC<HeaderProps> = ({
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className={`transition-all duration-300 px-4 py-2 rounded-lg text-sm font-medium ${
-                activeComponent === item.id
+              className={`transition-all duration-300 px-4 py-2 rounded-lg text-sm font-medium ${activeComponent === item.id
                   ? "text-gray-900 bg-gray-100"
                   : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-              }`}
+                }`}
             >
               {item.label}
             </button>
@@ -165,11 +163,10 @@ const Header: React.FC<HeaderProps> = ({
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`text-left transition-all duration-300 px-4 py-3 rounded-lg text-sm font-medium ${
-                  activeComponent === item.id
+                className={`text-left transition-all duration-300 px-4 py-3 rounded-lg text-sm font-medium ${activeComponent === item.id
                     ? "text-gray-900 bg-gray-100"
                     : "text-gray-600 hover:text-gray-900 hover:bg-gray-50"
-                }`}
+                  }`}
               >
                 {item.label}
               </button>

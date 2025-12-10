@@ -35,7 +35,7 @@ const Experience = () => {
     {
       title: "Associate Frontend Developer",
       company: "SwiftEdge Pvt Ltd",
-      period: "May 2022 – Feb 2023",
+      period: "March 2022 – Feb 2023",
       duration: "10 months",
       description: [
         "Assisted in frontend development for client projects using React.js, TypeScript, and Tailwind CSS, contributing to a 25% increase in user engagement",
